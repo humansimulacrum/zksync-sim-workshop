@@ -1,4 +1,8 @@
-import { minAmountOfTokenToSwapInUsd } from '../const/config.const';
+import {
+  minAmountOfTokenToSwapInUsd,
+  percentsOfEthTokensToSwapMax,
+  percentsOfEthTokensToSwapMin,
+} from '../const/config.const';
 import { choose } from './random.helper';
 import { sleep } from './sleep.helper';
 
@@ -45,8 +49,8 @@ export const calculateSwapParameters = async (swapInstance, debankInstance) => {
     fromToken = 'ETH';
     toToken = choose(nonEthSupportedTokens);
 
-    amountFrom = supportedTokensWithMinBalanceSufficed[0].amount * 0.4;
-    amountTo = supportedTokensWithMinBalanceSufficed[0].amount * 0.6;
+    amountFrom = (supportedTokensWithMinBalanceSufficed[0].amount * percentsOfEthTokensToSwapMin) / 100;
+    amountTo = (supportedTokensWithMinBalanceSufficed[0].amount * percentsOfEthTokensToSwapMax) / 100;
   } else {
     // another token in on the wallet
     const nonEthTokens = supportedTokensWithMinBalanceSufficed.filter((token) => token.symbol !== 'ETH');
