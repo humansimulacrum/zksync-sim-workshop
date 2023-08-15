@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+eth_privates.txt
+proxies.txt

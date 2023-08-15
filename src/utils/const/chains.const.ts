@@ -17,7 +17,7 @@ export class Chain {
 export const ETH = new Chain({
   name: 'ETH',
   chainId: 1,
-  rpc: 'https://rpc.ankr.com/eth/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/eth',
   explorer: 'https://etherscan.io/tx',
   token: 'ETH',
 });
@@ -25,7 +25,7 @@ export const ETH = new Chain({
 export const OP = new Chain({
   name: 'OP',
   chainId: 10,
-  rpc: 'https://rpc.ankr.com/optimism/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/optimism',
   explorer: 'https://optimistic.etherscan.io/tx',
   token: 'ETH',
 });
@@ -33,7 +33,7 @@ export const OP = new Chain({
 export const BSC = new Chain({
   name: 'BSC',
   chainId: 56,
-  rpc: 'https://rpc.ankr.com/bsc/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/bsc',
   explorer: 'https://bscscan.com/tx',
   token: 'BNB',
 });
@@ -41,7 +41,7 @@ export const BSC = new Chain({
 export const POLYGON = new Chain({
   name: 'POLYGON',
   chainId: 137,
-  rpc: 'https://rpc.ankr.com/polygon/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/polygon',
   explorer: 'https://polygonscan.com/tx',
   token: 'MATIC',
 });
@@ -49,7 +49,7 @@ export const POLYGON = new Chain({
 export const ARB = new Chain({
   name: 'ARB',
   chainId: 42161,
-  rpc: 'https://rpc.ankr.com/arbitrum/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/arbitrum',
   explorer: 'https://arbiscan.io/tx',
   token: 'ETH',
 });
@@ -57,7 +57,7 @@ export const ARB = new Chain({
 export const NOVA = new Chain({
   name: 'NOVA',
   chainId: 42170,
-  rpc: 'https://rpc.ankr.com/arbitrumnova/c838e2546976e80e04458e57c44b5bae4c29342eec0e2faf5c3febccc156ba83',
+  rpc: 'https://rpc.ankr.com/arbitrumnova',
   explorer: 'https://nova.arbiscan.io/tx',
   token: 'ETH',
 });
